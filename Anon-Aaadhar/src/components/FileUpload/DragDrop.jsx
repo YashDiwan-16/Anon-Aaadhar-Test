@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
-import { useState } from "react";
+
+import React, { useRef, useState, useEffect } from "react";
+import { AnonAadhaarProof, LogInWithAnonAadhaar, useAnonAadhaar } from "@anon-aadhaar/react";
 import "./DragDrop.css";
 import NavBar2 from '../MainPage/NavBar2';
 import img from '../FileUpload/img4.png';
@@ -7,15 +8,23 @@ import img from '../FileUpload/img4.png';
 const DragDrop = () => {
   const [files, setFiles] = useState(null);
   const inputRef = useRef();
+  const [anonAadhaar] = useAnonAadhaar();
 
-  const handleDragOver = (event) => {
+  // const seed = 188215933815421822754175153135772413169103;
+
+  useEffect(() => {
+    console.log("Anon Aadhaar status: ", anonAadhaar.status);
+  }, [anonAadhaar]);
+
+  const handleDragOver = (event) => { 
     event.preventDefault();
   };
+
   const handleDrop = (event) => {
     event.preventDefault();
-    // setFiles(event.dataTransfer.files);
-    console.log(event)
+    console.log(event);
   };
+
   return (
     <>
       <NavBar2 />
@@ -56,7 +65,7 @@ const DragDrop = () => {
         
       </div>
 
-      {/* {!files && (
+      {!files && (
         <div
           className="dropzone"
           onDragOver={handleDragOver}
@@ -77,9 +86,35 @@ const DragDrop = () => {
       <div className="btn-cont">
         <button className="sub">Submit To IPFS</button>
         <button className="mint">Mint NFT</button>
-      </div> */}
+
+      </div>
+      <LogInWithAnonAadhaar
+        nullifierSeed={12345}
+        fieldsToReveal={[
+          "revealAgeAbove18",
+          "revealPinCode",
+          "revealGender",
+          "revealPinCode",
+        ]}
+        useTestAadhaar={true}
+      />
+      <p>{anonAadhaar?.status}</p>
+      <div>
+        {anonAadhaar?.status === "logged-in" && (
+          <>
+            <p>✅ Proof is valid</p>
+            <AnonAadhaarProof
+              code={JSON.stringify(anonAadhaar.anonAadhaarProofs, null, 2)}
+            />
+          </>
+        )}
+      </div>
+
+      </div> 
+
     </>
   );
 };
 
 export default DragDrop;
+
