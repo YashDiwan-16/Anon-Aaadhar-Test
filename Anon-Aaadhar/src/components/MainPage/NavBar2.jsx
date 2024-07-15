@@ -21,12 +21,12 @@ function NavBar2() {
             <img src={logo} alt="LOGO" />
           </span>
         </div>
-        <div style={{ width: "63%" }} className="navElements secondchild">
+        <div className="navElements secondchild">
           <ul>
             <li>
               <Link to="/mainpage">Aadhar Login</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/DragDrop">Mint NFT</Link>
             </li>
             <li>
@@ -37,10 +37,10 @@ function NavBar2() {
             </li>
             <li>
               <Link to="/profile">Profile</Link>
-            </li>
-            <li>
+            </li> */}
+            <p>
               <ConnectButton />
-            </li>
+            </p>
           </ul>
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Mainpg from "./components/MainPage/mainpg"; // Correct the import path and component name
+import AadharLogin from "./components/MainPage/mainpg"; // Correct the import path and component name
 
 import FormPage from "./components/Form/FormPage";
 
 import DragDrop from "./components/FileUpload/DragDrop";
-// import Mainpg from './components/MainPage/mainpg'; // Correct the import path and component name
+// import AadharLogin from './components/MainPage/AadharLogin'; // Correct the import path and component name
 import Profile from "./components/Profile/profile";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />{" "}
         {/* Use capital letter for component */}
-        <Route path="/mainPage" element={<Mainpg />} />
+        <Route path="/mainPage" element={<AadharLogin />} />
         <Route path="/FormPage" element={<FormPage />} />{" "}
         {/* Use capital letter for component */}
         <Route path="/DragDrop" element={<DragDrop />} />{" "}

@@ -4,10 +4,9 @@
   align-items: center;
   width: 100%;
   font-size: larger;
-  margin-bottom: 30px;
-  border-radius: 30px;
-  box-shadow: rgba(19, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  background-color: #EFEFEF;
+  /* border-radius: 30px; */
+  /* box-shadow: rgba(19, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+  /* background-color: #EFEFEF; */
 }
 
 .navElements {
@@ -29,11 +28,8 @@ ul {
   width: 100%;
 }
 
-li {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+li{
+  color: black;
 }
 
 a {
@@ -102,4 +98,9 @@ img {
   .navElements:last-child {
     display: none;
   }
+}
+
+p{
+  padding: 5px;
+  font-size: small;
 }

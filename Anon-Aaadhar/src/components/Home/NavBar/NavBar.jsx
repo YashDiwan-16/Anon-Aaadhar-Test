@@ -22,11 +22,11 @@ function NavBar(hasOptions, { option1, option2, option3, option4, option5 }) {
         <div className="navElements2">
           Privacy to Security: Empower your aadhar
         </div>
-        <div className="navElements2">
+        <div className="navElements3">
           <ConnectButton
             accountStatus={{
               smallScreen: "avatar",
-              largeScreen: "full",
+              largeScreen: "avatar",
             }}
           />
         </div>

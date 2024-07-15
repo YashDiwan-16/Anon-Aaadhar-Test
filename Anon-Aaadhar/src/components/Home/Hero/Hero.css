@@ -1,14 +1,18 @@
 .heroContainer {
   display: flex;
   gap: 50px;
-  margin-top: 150px;
   height: auto;    
+  background: url("/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   height: 500px;
+  margin-top: 50px;
   gap: 20px;
 }
 
@@ -24,6 +28,7 @@
 
 .left p {
   font-size: 1.5rem; /* Use rem units for scalability */
+  color: #FFF;
 }
 
 .left span {
@@ -38,6 +43,8 @@ p {
 
 .right img {
   margin-right: 20px; /* Move the image to the right */
+  margin-top: 50px;
+  opacity: 0.8;
 }
 
 @media (max-width: 671px) {

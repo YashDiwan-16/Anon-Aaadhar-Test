@@ -3,15 +3,15 @@
 
 *{
     padding: 0;
-    background-color: #EFEFEF;
     margin: 0 auto;
     /* width: 95%; */
     font-family: "comic neue", sans-serif;
     font-weight: 500;
     font-style: normal;
+ /* background-color: #cccccc; */
     /* height:  */
 }
 
-button{
-    background-color: #AEDACA;
-}
+/* button{ */
+    /* background-color: #AEDACA; */
+/* } */

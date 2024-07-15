@@ -1,62 +1,9 @@
-.anonimg {
-  display: flex;
-  justify-content: space-betwee;
+.aadharbody{
+  background: url("/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.anon {
-  margin: auto;
-  margin-top: 10rem;
-  width: 300px;
-  height: 300px;
-  background-color: rgb(32, 32, 33);
-  border-radius: 50%;
-  display: block; /* Ensures the image fills its container */
-  transition: transform 1s ease-in-out; /* Smooth transition for animations */
-  /* transform: translate(-50%, -50%); */
-  transform-style: preserve-3d; /* Enables 3D transformations */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-/*@keyframes spin {
-    from { transform: rotate3d(0, 1, 0, 0deg); }
-    to { transform: rotate3d(0, 1, 0, 360deg); }
-  }*/
-  @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
-  
-.anon {
-    animation: spin 10s infinite linear;  /* Animation properties */
-  }
-.button-login {
-  height: fit-content;
-  width: fit-content;
-}
-
-.largeFont{
-
-  font-size: 30px;
-}
-
-button {
-  height: fit-content;
-  width: fit-content;
-  padding: 10px 12px;
-  border-radius: 30px;
-  background-color: cadetblue;
-  border: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-
-}
-#log {
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-  background-color: cadetblue;
-}
-.login {
-  margin-top: 15rem;
+.proofcss{
+  width: 700px;
 }

@@ -4,12 +4,11 @@
     align-items: center;
     width: 100%;
     font-size: larger;
-    margin-bottom: 30px;
     border-radius: 30px;
     box-shadow: rgba(19, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     background-color: #EFEFEF;
     padding: 10px 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .navElements {
@@ -22,6 +21,7 @@
 .navElements2 {
     flex: 1;
     text-align: center;
+    color: black;
     font-size: 1.2rem;
 }
 

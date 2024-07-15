@@ -4,7 +4,6 @@ import { useAccount } from "wagmi";
 import "./Hero.css";
 // import Button from "../../Button/Button";
 import { useNavigate } from "react-router-dom";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 const Hero = () => {
   const navigate = useNavigate();
   const { isConnected } = useAccount();
@@ -40,19 +39,21 @@ const Hero = () => {
       <div className="left">
         <div className="lcont">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur, soluta. Illo ex ipsa quasi incidunt rerum, molestiae
-            sint unde et beatae assumenda. Libero adipisci, esse explicabo odit
-            nisi ab iusto, harum neque officia praesentium ad Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Sint quasi et necessitatibus
-            repellendus incidunt soluta, non dolorem minus aperiam amet!
+            We are thrilled to announce that our team, Chain Champions, has
+            successfully completed the task for the HHGOA hackathon. We
+            developed a decentralized application (DApp) that utilizes Anon
+            Aadhaar to securely verify Aadhaar citizenship. Our DApp seamlessly
+            integrates wallet connections for user authentication and leverages
+            Anon Aadhaar’s zero-knowledge identity proof to ensure
+            privacy-preserving verification. We have also designed an intuitive
+            user interface to enhance the user experience.
           </p>
         </div>
       </div>
 
       <div className="right">
         <img
-          src="/src/assets/homepage.png"
+          src="/assets/homepage.png"
           style={{ width: "500px", height: "500px" }}
           alt="homepage"
         />
