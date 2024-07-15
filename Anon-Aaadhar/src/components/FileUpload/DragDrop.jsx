@@ -21,14 +21,14 @@ const DragDrop = () => {
       <NavBar2 />
       
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
       <div className="formcontainer">
         <div className="left">
-        <div class = "card">
+        <div className = "card">
     <img src={img} alt=""/>
-    <div class="card-content">
+    <div className="card-content">
       <h2>
         Steps
       </h2>

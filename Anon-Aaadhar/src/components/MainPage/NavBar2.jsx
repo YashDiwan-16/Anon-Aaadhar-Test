@@ -1,9 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import "./NavBar2.css";
 import logo from "./logo.png";
-
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Link, useNavigate } from "react-router-dom";
+import { useAccount } from "wagmi";
 function NavBar2() {
+  const navigate = useNavigate();
+  const { isConnected } = useAccount();
+  useEffect(() => {
+    console.log(!isConnected);
+    if (!isConnected) {
+      navigate("/");
+    }
+  }, [isConnected, navigate]);
   return (
     <>
       <div className="container">
@@ -28,6 +37,9 @@ function NavBar2() {
             </li>
             <li>
               <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              <ConnectButton />
             </li>
           </ul>
         </div>

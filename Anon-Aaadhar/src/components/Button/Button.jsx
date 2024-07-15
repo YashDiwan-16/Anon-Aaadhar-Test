@@ -1,14 +1,12 @@
-import React from 'react'
-import './Button.css'
+import React from 'react';
+import './Button.css';
 
-function Button({text , colour , fontSize}) {
+function Button({ text, colour, onClick }) {
   return (
-    <>
-      <button className={colour}>
-            {text}
-      </button>
-    </>
-  )
+    <button className={`btn ${colour}`} onClick={onClick}>
+      {text}
+    </button>
+  );
 }
 
-export default Button
+export default Button;
